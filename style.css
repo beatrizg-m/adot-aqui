@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Mako&family=Noto+Sans:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+[data-content="header"].header {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: #FFC856;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-content="header"] h1 {
+    font-family: 'Mako', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    color: #4A4222;
+}
+[data-content="header"] spam {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 400;
+    font-size: 24px;
+}
+[data-content="header"] a {
+    color: #4A4222;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+[data-content="first-content"] {
+    background-color: #FFC856;
+    width: 100%;
+    display: grid;
+    height: 550px;
+    grid-template-columns: 1fr 1fr;
+}
+
+[data-content="first-content-text"] h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    color: #4A4222;
+    font-size: 48px;
+    grid-column: 0 / 1;
+}
